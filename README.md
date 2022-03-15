@@ -1,5 +1,5 @@
 # rocker_ReLTER
-docker image for ReLTER package
+docker image for ReLTER package (https://github.com/oggioniale/ReLTER)
 
 Build:
 
