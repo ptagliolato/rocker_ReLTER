@@ -24,6 +24,5 @@ Open browser at localhost:8080 and login with
     password: youpassword
 
 You can also use the precompiled image from docker hub:
-
     docker pull ptagliolato/rocker_relter
     docker run -e PASSWORD=yourpassword -p 8080:8787 ptagliolato/rocker_relter
