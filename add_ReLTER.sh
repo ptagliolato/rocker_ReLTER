@@ -9,7 +9,7 @@ NCPUS=${NCPUS:--1}
 
 #apt-get update -qq \
 #  && apt-get install -y --no-install-recommends \
-#  libjq-dev
+#  libjq-dev libxslt-dev
 
 install2.r --error --skipinstalled -n $NCPUS \
 	jqr \
