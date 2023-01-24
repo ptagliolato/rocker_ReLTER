@@ -4,6 +4,7 @@ docker image for ReLTER package
 Build:
 
 docker build . -t rocker_relter
+#docker buildx build -t rocker_relter -f ./Dockerfile --platform=linux/amd64 .
 
 Run locally on port 8080 (change port as you like).
 You can change "yourpasswordW with the password you prefer.
@@ -17,3 +18,4 @@ password: youpassword
 You can also use the precompiled image from docker hub:
 docker pull ptagliolato/rocker_relter
 docker run -e PASSWORD=yourpassword -p 8080:8787 ptagliolato/rocker_relter
+

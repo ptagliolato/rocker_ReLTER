@@ -7,8 +7,10 @@ export DEBIAN_FRONTEND=noninteractive
 ## build ARGs
 NCPUS=${NCPUS:--1}
 
-#apt-get update -qq \
-#  && apt-get install -y --no-install-recommends \
+# https://cran.r-project.org/web/packages/keyring/readme/README.html
+# needed by keyring (zen4R <= atom4R <= keyring)
+apt-get update -qq && apt-get install -y --no-install-recommends \
+   libsecret-1-dev libsodium-dev
 #  libjq-dev
 
 install2.r --error --skipinstalled -n $NCPUS \
@@ -22,7 +24,16 @@ install2.r --error --skipinstalled -n $NCPUS \
 	spocc \
 	ggforce \
 	rosm \
-	MODIStsp
+	MODIStsp \
+	httr2 \
+	rworldmap \
+	rnaturalearth \
+	RCurl \
+	Rdpack \
+	countrycode \
+	atom4R \
+	zen4R
 
-R -e "devtools::install_github('https://github.com/oggioniale/ReLTER',ref = 'dev__withImprovements',dependencies = FALSE)"
+#R -e "install.packages('zen4R')"
+#R -e "devtools::install_github('https://github.com/ropensci/ReLTER',dependencies = FALSE)"
 #R -e "devtools::install_github('https://github.com/oggioniale/ReLTER',ref = 'dev__withImprovements',dependencies = FALSE)"
