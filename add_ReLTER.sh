@@ -36,4 +36,3 @@ install2.r --error --skipinstalled -n $NCPUS \
 
 #R -e "install.packages('zen4R')"
 #R -e "devtools::install_github('https://github.com/ropensci/ReLTER',dependencies = FALSE)"
-#R -e "devtools::install_github('https://github.com/oggioniale/ReLTER',ref = 'dev__withImprovements',dependencies = FALSE)"
