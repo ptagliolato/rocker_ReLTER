@@ -4,6 +4,14 @@ docker image for ReLTER package (https://github.com/ropensci/ReLTER)
 ## About
 Run RStudio with preinstalled ReLTER package through Docker.
 
+Note: rocker_relter is based on Rocker images that does not support RStudio on Apple M1 CPU computers at the moment.
+
+## Install Docker desktop on your computer
+
+Go to docker.com follow instructions:
+
+    https://docs.docker.com/desktop/
+
 ## Install a different branch of ReLTER package
 Edit the Dockerfile and modify the last line, using the name of your preferred branch as the ref= parameter value:
 
