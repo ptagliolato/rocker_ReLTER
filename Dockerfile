@@ -5,5 +5,5 @@ COPY add_ReLTER.sh /rocker_scripts/add_ReLTER.sh
 RUN chown root:root /rocker_scripts/add_ReLTER.sh
 RUN chmod +x /rocker_scripts/add_ReLTER.sh
 RUN /rocker_scripts/add_ReLTER.sh
-RUN R -e "devtools::install_github('https://github.com/ropensci/ReLTER@2.0.1',dependencies = FALSE)"
+RUN R -e "devtools::install_github('https://github.com/ropensci/ReLTER@2.1.0',dependencies = FALSE)"
 

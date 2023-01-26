@@ -32,7 +32,8 @@ install2.r --error --skipinstalled -n $NCPUS \
 	Rdpack \
 	countrycode \
 	atom4R \
-	zen4R
+	zen4R \
+        geodata
 
 #R -e "install.packages('zen4R')"
 #R -e "devtools::install_github('https://github.com/ropensci/ReLTER',dependencies = FALSE)"
